@@ -6,11 +6,13 @@ guess_hint = 1
 third_try = 2
 guess_help = ''
 second_guess =1
+numbers = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 out_of_guesses = False
 numbers = ''
 enter_secert = input('Enter Secert Word: ')
 secert_word = enter_secert
-
+for numbers in number:
+    print = (numbers * '*')
 
 while guess != secert_word and not (out_of_guesses):
     if guess_count < guess_limit:
