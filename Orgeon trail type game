@@ -1,19 +1,19 @@
-print("Welcome to Choices. Will you make the right Choice?")
+print("Welcome to the game Choices. Will you make the right Choice?")
 
 name = input('What is your name? ')
-age = input('How old are you? ')
+age = int(input('How old are you? '))
 
 
-def age_limit():
-    if age <= 10:
-        print("Hello", name, "You are too young at", age,
-              "but I will let you play anyways. This time!")
-    elif (age >= 11) and (age <= 40):
-        print("Lets Goooo", name, "You just made the cut off at",
-              age, "So are you READY FOR A GAME?")
-
-    else:
-        print(name, "You are old are you sure you can handle this game?")
-
-
-print(age_limit)
+if age <= 10:
+    print("Hello", name, "You are too young at", age,
+          "but I will let you play anyways. This time!")
+elif (age >= 11) and (age <= 40):
+    print("Lets Goooo", name, "You just made the cut off at",
+          age, "So are you READY FOR A GAME?")
+elif age > 40:
+    print(name, "You are old are you sure you can handle this game?")
+want_to_play = input('Are you ready to PLAY (yes/no)  ')
+if want_to_play == "yes":
+    print("Let's PLAY!!")
+elif want_to_play == "no":
+    print("It is ok we can play next time.")
