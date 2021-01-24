@@ -1,8 +1,8 @@
 print("Welcome to the game Choices. Will you make the right Choice?")
 
-name = input('What is your name? ')
+name = input('What is your name? ').upper()
 age = int(input('How old are you? '))
-
+health = 10
 
 if age <= 10:
     print("Hello", name, "You are too young at", age,
@@ -14,6 +14,16 @@ elif age > 40:
     print(name, "You are old are you sure you can handle this game?")
 want_to_play = input('Are you ready to PLAY (yes/no)  ')
 if want_to_play == "yes":
-    print("Let's PLAY!!")
+    print("Let's PLAY!!").lower()
+
+    door = input(
+        "You are home alone and hear a noise. You go to the door: do you open the door or just ignore it: (open/ignore: ")
+    if door == "open":
+        input("You see a dim light flashing at the end of your drive way:",
+              "do you close the door or go see: (close/ignore: ")
+    elif door == "ignore":
+        input("You go back to the kitchen where you were making a cup of ramen for dinner.",
+              "When you open the microwave to get your ramen you see a puppy in the reflection at the backdoor:",
+              "Go get the puppy or ignore: (puppy/ignore) ")
 elif want_to_play == "no":
     print("It is ok we can play next time.")
