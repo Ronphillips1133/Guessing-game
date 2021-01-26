@@ -26,4 +26,4 @@ if want_to_play == "yes":
               "When you open the microwave to get your ramen you see a puppy in the reflection at the backdoor:",
               "Go get the puppy or ignore: (puppy/ignore) ")
 elif want_to_play == "no":
-    print("It is ok we can play next time.")d
+    print("It is ok we can play next time.")
