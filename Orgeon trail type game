@@ -12,10 +12,12 @@ elif (age >= 11) and (age <= 40):
           age, "So are you READY FOR A GAME?")
 elif age > 40:
     print(name, "You are old are you sure you can handle this game?")
-want_to_play = input('Are you ready to PLAY (yes/no)  ')
+    want_to_play = input('Are you ready to PLAY (yes/no)  ')
 if want_to_play == "yes":
     print("Let's PLAY!!").lower()
-
+elif want_to_play == "no":
+    print("It is ok we can play next time.")
+while health > 0:
     door = input(
         "You are home alone and hear a noise. You go to the door: do you open the door or just ignore it: (open/ignore: ")
     if door == "open":
@@ -25,5 +27,3 @@ if want_to_play == "yes":
         input("You go back to the kitchen where you were making a cup of ramen for dinner.",
               "When you open the microwave to get your ramen you see a puppy in the reflection at the backdoor:",
               "Go get the puppy or ignore: (puppy/ignore) ")
-elif want_to_play == "no":
-    print("It is ok we can play next time.")
