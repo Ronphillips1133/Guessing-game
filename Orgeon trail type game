@@ -18,12 +18,18 @@ if want_to_play == "yes":
 elif want_to_play == "no":
     print("It is ok we can play next time.")
 while health > 0:
-    door = input(
+    answer = input(
         "You are home alone and hear a noise. You go to the door: do you open the door or just ignore it: (open/ignore: ")
-    if door == "open":
+    if answer == "open":
         input("You see a dim light flashing at the end of your drive way:",
               "do you close the door or go see: (close/ignore: ")
-    elif door == "ignore":
+    if answer == "ignore":
         input("You go back to the kitchen where you were making a cup of ramen for dinner.",
               "When you open the microwave to get your ramen you see a puppy in the reflection at the backdoor:",
               "Go get the puppy or ignore: (puppy/ignore) ")
+    if answer == "puppy":
+             input("You go to open the back door to get the Puppy where a stranger is Hiding and KILLS you.
+             health = 0
+    else:
+        print("You died. Try again and see if you can get a different outcome."
+        
